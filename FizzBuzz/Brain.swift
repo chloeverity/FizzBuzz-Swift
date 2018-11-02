@@ -10,6 +10,10 @@ import Foundation
 
 class Brain {
     
+    func check(number: Int) -> String {
+        return "Fizz"
+    }
+    
     func isDivisibleBy(divisor: Int, number: Int) -> Bool {
         return number % divisor == 0
     }
