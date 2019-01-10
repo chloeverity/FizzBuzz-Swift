@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200EF82021E787FF008015C2 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EF81F21E787FF008015C2 /* ViewControllerUnitTests.swift */; };
 		20509D64218C65580080FDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20509D63218C65580080FDC7 /* AppDelegate.swift */; };
 		20509D66218C65580080FDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20509D65218C65580080FDC7 /* ViewController.swift */; };
 		20509D69218C65580080FDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20509D67218C65580080FDC7 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200EF81F21E787FF008015C2 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		20509D60218C65580080FDC7 /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20509D63218C65580080FDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20509D65218C65580080FDC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				20509D7D218C65590080FDC7 /* Info.plist */,
 				20509D94218C65950080FDC7 /* BrainTests.swift */,
 				20509D98218C724A0080FDC7 /* GameTests.swift */,
+				200EF81F21E787FF008015C2 /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				20509D95218C65950080FDC7 /* BrainTests.swift in Sources */,
 				20509D99218C724A0080FDC7 /* GameTests.swift in Sources */,
+				200EF82021E787FF008015C2 /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW52WA3GKU;
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW52WA3GKU;
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
