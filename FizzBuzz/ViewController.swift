@@ -53,14 +53,17 @@ class ViewController: UIViewController {
         gameScore = response.score
     }
     @IBAction func buttonTapped(_ sender: UIButton) {
-        if sender == numberButton {
-            play(move: Move.number)
-        } else if sender == fizzButton {
-            play(move: Move.fizz)
-        } else if sender == buzzButton {
-            play(move: Move.buzz)
-        } else {
+        switch sender {
+        case numberButton:
+            play(move: .number)
+        case fizzButton:
+            play(move: .fizz)
+        case buzzButton:
+            play(move: .buzz)
+        case fizzBuzzButton:
             play(move: .fizzBuzz)
+        default:
+            print("Invalid selection")
         }
     }
 }
