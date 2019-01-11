@@ -1,14 +1,14 @@
 //
-//  FizzBuzzUITests.swift
+//  ViewControllerUITests.swift
 //  FizzBuzzUITests
 //
-//  Created by Chloe Verity on 02/11/2018.
-//  Copyright © 2018 Chloe Verity. All rights reserved.
+//  Created by Chloe Verity on 11/01/2019.
+//  Copyright © 2019 Chloe Verity. All rights reserved.
 //
 
 import XCTest
 
-class FizzBuzzUITests: XCTestCase {
+class ViewControllerUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
