@@ -49,7 +49,11 @@ class ViewController: UIViewController {
         gameScore = response.score
     }
     @IBAction func buttonTapped(_ sender: UIButton) {
-        play(move: Move.number)
+        if sender == numberButton {
+            play(move: Move.number)
+        } else {
+            play(move: .fizz)
+        }
     }
 }
 
