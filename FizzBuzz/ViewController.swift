@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberButton: UIButton!
     
     @IBOutlet weak var fizzButton: UIButton!
+    
+    @IBOutlet weak var buzzButton: UIButton!
+    @IBOutlet weak var fizzBuzzButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Game()
@@ -54,8 +57,10 @@ class ViewController: UIViewController {
             play(move: Move.number)
         } else if sender == fizzButton {
             play(move: Move.fizz)
+        } else if sender == buzzButton {
+            play(move: Move.buzz)
         } else {
-            play(move: .buzz)
+            play(move: .fizzBuzz)
         }
     }
 }

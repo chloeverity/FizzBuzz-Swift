@@ -58,12 +58,16 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryF-C4-idx">
                                         <rect key="frame" x="153" y="153" width="141.5" height="141.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="80"/>
                                         <state key="normal" image="space" backgroundImage="button_border">
                                             <color key="titleColor" red="0.94117647059999998" green="0.93725490199999995" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pne-mx-tgi"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baw-Hr-Tmx">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baw-Hr-Tmx" userLabel="Buzz Button">
                                         <rect key="frame" x="0.0" y="153" width="141.5" height="141.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="80"/>
@@ -71,7 +75,7 @@
                                             <color key="titleColor" red="0.94117647059999998" green="0.93725490199999995" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cyy-SN-6c1"/>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujC-Ul-LsF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -110,7 +114,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buzzButton" destination="baw-Hr-Tmx" id="JUY-T7-33Q"/>
                         <outlet property="fizzButton" destination="X10-lr-mSn" id="1dP-RJ-Ab2"/>
+                        <outlet property="fizzBuzzButton" destination="ryF-C4-idx" id="Ul7-Kz-uO1"/>
                         <outlet property="numberButton" destination="k11-RH-mex" id="dsy-m4-UJZ"/>
                     </connections>
                 </viewController>
